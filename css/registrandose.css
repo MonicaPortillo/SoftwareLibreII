@@ -1,0 +1,310 @@
+
+*
+body{
+    background-image:url(http://vintageholidaycrafts.com/wp-content/uploads/2009/03/free-floral-white-and-pink-vintage-scrapbooking-paper.png);
+    background-size:100%;
+}
+
+ html{
+	padding: 0px;
+	margin: 0px;
+}
+ 
+header
+{
+    width: 100%;
+}
+ 
+#subheader
+{
+    
+    width: 100%;
+    height: 100px;
+    background-color:#FF69B4;
+    padding-top: 20px;
+}
+ 
+#subheader h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+ 
+#subheader p
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size:  15px;
+    margin-top: 30px;
+}
+ 
+
+/* Estilos para el men� desplegable */
+ 
+ 
+/* Primera parte */
+uo, ol {
+    list-style: none;
+}
+nav
+{
+    margin: auto;
+    width: 960px;
+    text-align: center;
+}
+ hr { 
+  background-color: Red;
+  height: 10px; 
+}
+.nav li
+{
+    position: center;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    width: 130px;
+    border-top: 0 px;
+    height : 100%;
+}
+ 
+.nav > li
+{
+    float: left;
+}
+ 
+/* Segunda parte */
+.nav li ul
+{
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    top: 40px;
+    left: 0;
+}
+ 
+.nav li:hover > ul
+{
+    display: block;
+}
+ 
+ 
+/* Tercera parte */
+nav li ul li
+{
+    position: relative;
+}
+ 
+.nav li ul li ul
+{
+    left: 160px;
+    top: 0;
+}
+ 
+ 
+/* COLORES Y EFECTOS */
+ 
+.nav li
+{
+   background-color:#C71585;
+   box-shadow: 0px 0px 1px #fff inset; /* Con esta sombra creamos un peque�o borde para diferenciar los "ul" y "li" del men� */
+   transition: 0.5s;
+}
+ 
+.nav li a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+} 
+ 
+.nav li:hover
+{ 
+    box-shadow: 0px 0px 15px #fff inset;
+}
+ 
+ 
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+ 
+ 
+/* Estilos de los art�culos */
+ 
+article
+{
+    width: 960px;
+    margin: 150px auto;
+}
+ 
+article .articulo
+{
+    visibility : hidden;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #FF69B4;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #fff inset , 3px 3px 5px #FFB6C1;
+}
+ 
+article .articulo .titulo
+{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #fff;
+}
+ 
+article .articulo p
+{
+    text-align: justify;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+ 
+p
+{
+color: #424242;
+font-size: 48%;
+font-family: cursive
+}
+button 
+{
+    background-color:#FF69B4;
+    align: center;
+}
+.aceptar{
+	background-color:#C71585;
+	color:#FFDAB9;
+	padding-left: 10px;
+	padding-right: 20px;
+	border-radius: 4px;
+	font-size: 1.8rem;
+
+
+}
+.aceptarr{
+	background-color:#FFDAB9;
+	color:#C71585;
+	font-size: 1.4rem;
+
+
+}
+.aceptar:hover{
+	background-color: #A4A4A4;
+	cursor: pointer;
+}
+
+
+
+menu:after , menu:before {
+  display : block;
+  content : ' ';
+}
+
+menu:after {
+  clear : both;
+}
+
+li {
+  list-style-type : none;
+
+
+  float   : left;
+  cursor  : pointer;
+  padding : 3px 10px;
+
+
+}
+
+li:first-child {
+  border-radius : 5px 0 0 5px;
+}
+
+li:last-child {
+  border-radius : 0 5px 5px 0;
+}
+
+li a {
+  display : block;
+  padding : 10px 13px;
+  font-size : 26px;
+  text-decoration : none;
+  border-radius   : 5px;
+  position        : relative;
+  top   : 0;
+  color : #FFF;			
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+li a:after {
+  display  : block;
+  content  : '';
+  position : absolute;
+  top  : 100%;
+  left : 42%;
+  border-style : solid;
+  border-color : transparent;
+  border-width : 5px 5px 0 5px;
+  transition   : all .4s;
+}
+
+li:hover a:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
+
+/*************************************/
+
+
+
+.menu2 a {
+  font-family : georgia;
+  font-size   : 14px;
+  font-style  : italic;
+  text-transform : capitalize;
+}
+
+.menu2 li {
+  border-right  : 1px solid rgba(200,200,255,0.5);
+  border-left   : 1px solid rgba(40,40,40,0.2); 
+}
+
+.selected {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+.selected:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
+
+a.fun {
+  display : none;
+}
+.formulario{
+	width: 70%;
+	height: 70%;
+        background-color:#FFFAF0;
+      font-family: sans-serif;
+}
+input{
+	width: 40%;
+	height: 30px;
+	border:1px solid #fafafa;
+	color:#1e1e1e;
+}
