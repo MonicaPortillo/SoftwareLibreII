@@ -72,7 +72,7 @@
                                 echo "<td>".$row->nombre."</td>";
                                 echo "<td>".$row->apellido."</td>";
                                 echo "<td>".$row->direccion."</td>";
-                                echo "<td>".$row->dui."</td>";
+                                echo "<td>".$row->DUI."</td>";
                                 echo "<td>".$row->f_nacimiento."</td>";
 								echo "<td>".$row->telefono."</td>";
                                 echo "<td>".$row->f_inicio."</td>";

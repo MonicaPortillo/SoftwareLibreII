@@ -52,7 +52,7 @@ include './class/Connection.class.php';
         </header>
     
 	  
-    <body>
+    <body bgcolor="AntiqueWhite">
             <nav>
                 <ul class="nav">
                     <li><a href="sesioncliente.php" >Incio</a></li>

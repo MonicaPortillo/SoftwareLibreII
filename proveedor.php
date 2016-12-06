@@ -65,8 +65,8 @@
                             echo "<tr>";
                                 echo "<td>".$row->id_proveedor."</td>";
                                 echo "<td>".$row->nombre."</td>";
-                                echo "<td>".$row->direccion."</td>";
-                                echo "<td>".$row->tel."</td>";
+                                echo "<td>".$row->Direccion."</td>";
+                                echo "<td>".$row->telefono."</td>";
                                 echo "<td>".$row->email."</td>";
 								 echo "<td>".$row->saldo."</td>";
                                 echo "<td><a href='modificarproveedor.php?id=".$row->id_proveedor."' >Modificar</a></td>";

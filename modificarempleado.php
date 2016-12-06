@@ -60,7 +60,7 @@
                 Direccion Empleado<br>
                 <INPUT TYPE="TEXT" NAME="direccion" value='<?=$rows[0]->direccion?>'><br>
                Dui Empleado<br>
-                <INPUT TYPE="TEXT" NAME="dui" value='<?=$rows[0]->dui?>'><br>
+                <INPUT TYPE="TEXT" NAME="dui" value='<?=$rows[0]->DUI?>'><br>
                 Fecha de Nacimiento Empleado<br>
                 <INPUT TYPE="TEXT" NAME="f_nacimiento" value='<?=$rows[0]->f_nacimiento?>'><br>
                 Fecha de Inicio de Empleado<br>

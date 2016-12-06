@@ -56,11 +56,11 @@
                 Apellido Cliente<br>
                 <INPUT TYPE="TEXT" NAME="apellido" value='<?=$rows[0]->apellido?>'><br>
                 Direccion Cliente<br>
-                <INPUT TYPE="TEXT" NAME="direccion" value='<?=$rows[0]->direccion?>'><br>
+                <INPUT TYPE="TEXT" NAME="direccion" value='<?=$rows[0]->Direccion?>'><br>
                 Telefono Cliente<br>
-                <INPUT TYPE="TEXT" NAME="tel" value='<?=$rows[0]->tel?>'><br>
+                <INPUT TYPE="TEXT" NAME="tel" value='<?=$rows[0]->telefono?>'><br>
                  Dui Cliente<br>
-                <INPUT TYPE="TEXT" NAME="dui" value='<?=$rows[0]->dui?>'><br>
+                <INPUT TYPE="TEXT" NAME="dui" value='<?=$rows[0]->DUI?>'><br>
                 Email Cliente<br>
                 <INPUT TYPE="TEXT" NAME="email" value='<?=$rows[0]->email?>'><br>
                 

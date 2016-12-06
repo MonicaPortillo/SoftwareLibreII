@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/styles.css" media="screen"/>
         <link rel="stylesheet" href="css/tablestyle.css" media="screen"/>
         
-        <link rel="stylesheet" href="css/estilos.css" media="screen"/>
+        <link rel="stylesheet" href="css/control.css" media="screen"/>
        
     </head>
     <body>
@@ -73,7 +73,7 @@
                                 echo "<td>".$row->cantidad."</td>";
                                 echo "<td>".$row->fecha."</td>";
                                 echo "<td>".$row->total."</td>";
-								echo "<td>".$row->saldo"</td>";
+								echo "<td>".$row->saldo."</td>";
                                 echo "<td><a href='modificarcompra.php?id=".$row->id_compra."' >Modificar</a></td>";
                                 echo "<td><a href='eliminarcompra.php?id=".$row->id_compra."' >Eliminar</a></td>";
                             echo "</tr>";

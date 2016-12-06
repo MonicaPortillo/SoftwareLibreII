@@ -37,12 +37,12 @@ $arreglo;
                  Usuario
                  <INPUT TYPE="TEXT" NAME="user"/><br>
                  Contraseña 
-                 <INPUT TYPE="TEXT" NAME="pass"/><br>
+                 <INPUT type="password" NAME="pass"/><br>
                  <INPUT TYPE="TEXT" NAME="type" style="visibility:hidden" value="0"/> <br>
 		</fieldset>
-                
                  <input type="submit" value="Registrar" class="aceptar"/>
-			</form>				 
+						
+                </form>	 
 			<?php
 	 ?>
         </section>

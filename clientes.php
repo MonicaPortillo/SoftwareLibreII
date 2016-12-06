@@ -72,9 +72,9 @@
                                 echo "<td>".$row->id_cliente."</td>";
                                 echo "<td>".$row->nombre."</td>";
                                 echo "<td>".$row->apellido."</td>";
-                                echo "<td>".$row->direccion."</td>";
-                                echo "<td>".$row->tel."</td>";
-                                echo "<td>".$row->dui."</td>";
+                                echo "<td>".$row->Direccion."</td>";
+                                echo "<td>".$row->DUI."</td>";
+                                echo "<td>".$row->telefono."</td>";
                                 echo "<td>".$row->email."</td>";
                                 echo "<td><a href='modificarcliente.php?id=".$row->id_cliente."' >Modificar</a></td>";
                                 echo "<td><a href='eliminarcliente.php?id=".$row->id_cliente."' >Eliminar</a></td>";

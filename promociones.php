@@ -9,11 +9,11 @@
 <!doctype html>
 <html>
     <head>
-        <title>Boutique</title>
+        <title>Sistema de Boutique</title>
         <link rel="stylesheet" href="css/styles.css" media="screen"/>
         <link rel="stylesheet" href="css/tablestyle.css" media="screen"/>
         
-        <link rel="stylesheet" href="css/estilos.css" media="screen"/>
+        <link rel="stylesheet" href="css/control.css" media="screen"/>
        
     </head>
     
@@ -75,9 +75,9 @@
                                 echo "<td>".$row->descripcion."</td>";
                                 echo "<td>".$row->f_inicio."</td>";
                                 echo "<td>".$row->f_final."</td>";
-								echo "<td>".$row->precio_unitario"</td>";
-								echo "<td>".$row->descuento"</td>";
-								echo "<td>".$row->total"</td>";
+								echo "<td>".$row->precio_unitario."</td>";
+								echo "<td>".$row->descuento."</td>";
+								echo "<td>".$row->total."</td>";
                                 echo "<td><a href='modificarpromocion.php?id=".$row->id_promocion."' >Modificar</a></td>";
                                 echo "<td><a href='eliminarpromocion.php?id=".$row->id_promocion."' >Eliminar</a></td>";
                             echo "</tr>";
