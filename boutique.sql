@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2014 a las 16:00:53
+-- Tiempo de generación: 08-12-2016 a las 15:57:40
 -- Versión del servidor: 5.6.16
 -- Versión de PHP: 5.5.9
 
@@ -55,17 +55,42 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `Direccion` varchar(25) NOT NULL,
   `DUI` varchar(10) NOT NULL,
   `telefono` int(8) NOT NULL,
-  `e-mail` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=454 ;
 
 --
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido`, `Direccion`, `DUI`, `telefono`, `e-mail`) VALUES
+INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido`, `Direccion`, `DUI`, `telefono`, `email`) VALUES
 (2, 'Monica', 'Portillo', 'Col Aurora', '5467888878', 2147483647, 'mlportilloh14@hotmail.com'),
-(7, 'MPrueba', 'Portillo', 'Col Aurora', '8765436783', 0, 'mlportilloh7@gmail.com');
+(14, 'mmmm', 'mmmmmmm', 'mmm', '888', 8888, 'monicaportillo19@gmail.com'),
+(15, 'gfgfhg', 'hggfgf', '45ygfhgf', '323233', 544444443, 'monicaportillo19@gmail.com'),
+(16, 'gfgggr', 'trrtrt', 'rft54rf', '445455454', 455555, 'monicaportillo19@gmail.com'),
+(17, 'errerere', 'rererere', 'tyyytr', 'rtr', 45454, ''),
+(18, 'errerere', 'rererere', 'tyyytr', '433333', 45454, 'monicaportillo19@gmail.com'),
+(19, 'dffdfd', 'dsdsd', 'dfsff', '4334543', 35544343, 'tgf'),
+(20, 'trtrtrtrtr', 'rttrtr', 'rtrtr', '5454', 453454, 'monicaportillo19@gmail.com'),
+(21, 'rger', 'retttttttre', 'gfghdhd', '435', 5464432, 'monicaportillo19@gmail.com'),
+(22, 'hghggh', 'jhhhnhnh', '45ygfhgf', '9876543433', 2147483647, 'monicaportillo19@gmail.com'),
+(23, 'ererrere', 'eereew', 'rerer', '7654321245', 2147483647, 'mlportilloh14@hotmail.com'),
+(24, '', '', '', '', 0, ''),
+(25, '', '', '', '', 0, ''),
+(26, 'fttftftf', 'tttdrtrtr', 'ttrtrtrtr', '55456464', 0, 'monicaportillo19@gmail.com'),
+(27, 'ffdfd', 'fdfdfd', 'sddssd', 'dfsdfsdfsd', 0, 'dsdsd'),
+(28, 'fdffdfd', 'fdffdfd', 'fdfdf', '45454', 2147483647, 'monicaportillo19@gmail.com'),
+(29, 'wewerwer', 'wrrrrw', 'rrere', 'rrer', 767676, 'monicaportillo19@gmail.com'),
+(444, 'ffd', 'fdfd', 'fddf', 'df34542', 2454424, '4222222226fs'),
+(445, '', '', '', '', 0, ''),
+(446, 'sdadsd', 'ddsdsd', 'ddsdsds', '1234567543', 232343, 'mlportilloh14@hotmail.com'),
+(447, 'Jose', 'Arg', 'San Miguel', '232332323', 74714870, 'mm@gmail.com'),
+(448, 'Joseline', 'Rosales', 'San Miguel', '43434334', 76563412, 'joseline@gmail.com'),
+(449, 'Lourdes Maria', 'Rosales', 'San Miguel', '34567687', 67895432, 'lourdes@gmail.com'),
+(450, 'Carolina', 'Lopez', 'San Miguel', '33333456', 76543212, 'caro@gmail.com'),
+(451, 'Karina', 'Lopez', 'San Miguel', '2345676543', 76587643, 'kari@gmail.com'),
+(452, 'Luis', 'Lorenzo', 'San Miguel', '5432456', 76876532, 'luis@gmail.com'),
+(453, 'Karen', 'Lopez', 'San Miguel', '9875678978', 76543212, 'karen@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -98,9 +123,9 @@ CREATE TABLE IF NOT EXISTS `empleados` (
   `apellido` varchar(30) NOT NULL,
   `direccion` varchar(30) NOT NULL,
   `DUI` varchar(10) NOT NULL,
-  `fecha de nac.` date NOT NULL,
+  `f_nacimiento` date NOT NULL,
   `telefono` int(8) NOT NULL,
-  `fecha de inicio` date NOT NULL,
+  `f_inicio` date NOT NULL,
   `puesto` varchar(20) NOT NULL,
   `salario` decimal(6,0) NOT NULL,
   PRIMARY KEY (`id_empleado`)
@@ -110,8 +135,9 @@ CREATE TABLE IF NOT EXISTS `empleados` (
 -- Volcado de datos para la tabla `empleados`
 --
 
-INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `direccion`, `DUI`, `fecha de nac.`, `telefono`, `fecha de inicio`, `puesto`, `salario`) VALUES
-('emp001', 'Marcos', 'Perez', 'col. san benito #47', '12457693-3', '2000-12-17', 78965421, '2014-01-06', 'Gerente ventas', '800');
+INSERT INTO `empleados` (`id_empleado`, `nombre`, `apellido`, `direccion`, `DUI`, `f_nacimiento`, `telefono`, `f_inicio`, `puesto`, `salario`) VALUES
+('em98', 'Jose', 'Castillo', 'San Miguel', '456788766', '0000-00-00', 76898976, '2012-03-15', 'Gerente', '550'),
+('emp001', 'Marcos Jose', 'Perez', 'col. san benito #42', '12457693-3', '2000-12-17', 78965421, '2014-01-06', 'Gerente ventas', '800');
 
 -- --------------------------------------------------------
 
@@ -123,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `perfume` (
   `id_perfume` varchar(6) NOT NULL,
   `nombre` varchar(15) NOT NULL,
   `marca` varchar(15) NOT NULL,
-  `descripcion` varchar(20) NOT NULL,
+  `descripcion` varchar(40) NOT NULL,
   `ml` int(4) NOT NULL,
   `familia` varchar(15) NOT NULL,
   `cantidad_existente` int(4) NOT NULL,
@@ -139,10 +165,10 @@ CREATE TABLE IF NOT EXISTS `perfume` (
 --
 
 INSERT INTO `perfume` (`id_perfume`, `nombre`, `marca`, `descripcion`, `ml`, `familia`, `cantidad_existente`, `precio_unitario`, `precio_mayoreo`, `precio_compra`, `imagen`) VALUES
-('1', 'Coco Mademoisel', 'chanel', 'Fresca y sensual. Un', 100, 'floral de rosa ', 25, '80', '60', '0', '761413_116520_a_LARGE.jpg'),
+('1', 'Coco Mademoisel', 'chanelkkkk', 'Fresca y sensual. Un', 100, 'floral de rosa ', 25, '80', '60', '0', '761413_116520_a_LARGE.jpg'),
 ('10', 'ANTAEUS', 'chanel', 'Perfume sensual y po', 100, 'AromÃ¡tico-cuer', 75, '80', '75', '0', '668426_118450_a_LARGE.jpg'),
 ('11', '212', 'carolina herrer', 'Sorprendente fraganc', 100, 'La luz captura ', 75, '90', '80', '0', '130066_212_men_by_carolina_herrera_100ml_.jpg'),
-('12', '212 SEXY', 'carolina herrer', 'La forma del frasco ', 100, 'Sensualidad sex', 40, '80', '75', '0', '531128_producto-2270-2.jpg'),
+('12', '212 SEXY', 'Carolina Herrer', 'La forma del frasco ', 100, 'Sensualidad sex', 40, '80', '75', '0', '531128_producto-2270-2.jpg'),
 ('13', '212 surf', 'carolina herrer', 'Este original frasco', 100, 'Este acorde acu', 40, '60', '50', '0', '710174_PRFM-199904 (1).jpg'),
 ('14', '212 body-spray', 'carolina herrer', 'El exclusivo diseÃ±o', 100, 'Aire fresco - F', 25, '100', '75', '0', '59754_7005517792_6a3e8a7f8e_z.jpg'),
 ('15', '212 body-spray', 'carolina herrer', 'El exclusivo diseÃ±o', 100, 'Comodidad y fre', 25, '150', '100', '0', '375855_71wpm7GdHaL._SY355_.jpg'),
@@ -191,7 +217,7 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
   `nombre` varchar(30) NOT NULL,
   `Direccion` varchar(30) NOT NULL,
   `telefono` int(8) NOT NULL,
-  `e-mail` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
   `saldo` decimal(6,0) NOT NULL,
   PRIMARY KEY (`id_proveedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -200,7 +226,7 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
 -- Volcado de datos para la tabla `proveedores`
 --
 
-INSERT INTO `proveedores` (`id_proveedor`, `nombre`, `Direccion`, `telefono`, `e-mail`, `saldo`) VALUES
+INSERT INTO `proveedores` (`id_proveedor`, `nombre`, `Direccion`, `telefono`, `email`, `saldo`) VALUES
 ('pro001', 'Fernando Caseres', 'col. almendros #75', 28975463, 'fer_caseres78@gmail.com', '100');
 
 -- --------------------------------------------------------
@@ -222,14 +248,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 INSERT INTO `usuarios` (`alias`, `pass`, `type`) VALUES
 ('admin', '21232f297a57a5a743894a0e4a801fc3', 1),
-('user', '21232f297a57a5a743894a0e4a801fc3', 0),
-('moni', 'ss', 0),
-('monib', 'ss', 0),
-('s', '356a192b7913b04c54574d18c28d46e6395428ab', 0),
-('b', '4a0a19218e082a343a1b17e5333409af9d98f0f5', 0),
-('z', '356a192b7913b04c54574d18c28d46e6395428ab', 0),
-('r', '4dc7c9ec434ed06502767136789763ec11d2c4b7', 0),
-('adminee', '58e6b3a414a1e090dfc6029add0f3555ccba127f', 0);
+('user', '21232f297a57a5a743894a0e4a801fc3', 0);
 
 -- --------------------------------------------------------
 
@@ -264,7 +283,6 @@ CREATE TABLE IF NOT EXISTS `ventas_online` (
   `id_perfume` varchar(6) NOT NULL,
   `id_cliente` int(6) NOT NULL,
   `cantidad` int(4) NOT NULL,
-  `fecha` date NOT NULL,
   `tarjeta` varchar(15) NOT NULL,
   `total` decimal(6,0) NOT NULL,
   PRIMARY KEY (`id_ventaonline`),
